@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import Icon from '@mdi/react';
+import { mdiLinkedin, mdiGithub } from '@mdi/js';
 import HeroImg from '../assets/images/hero.jpg';
-import Button from './Button';
-import PText from './PText';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
 
@@ -16,11 +16,11 @@ const HeroStyles = styled.div`
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-top: -8rem;
   }
 
   .hero__heading {
     font-size: 2rem;
-    margin-bottom: -4rem;
     position: relative;
 
     span {
@@ -38,7 +38,7 @@ const HeroStyles = styled.div`
   .hero__img {
     max-width: 900px;
     width: 100%;
-    height: 600px;
+    height: 550px;
     margin: 0 auto;
     border: 2px solid var(--gray-1);
   }
@@ -47,7 +47,7 @@ const HeroStyles = styled.div`
     margin-top: -50rem;
 
     .hero__info__button {
-      margin-top: 30rem;
+      margin-top: 55rem;
     }
   }
 
@@ -57,16 +57,17 @@ const HeroStyles = styled.div`
     flex-direction: column;
     gap: 2rem;
     position: absolute;
-    bottom: 20px;
     width: 50px;
   }
 
   .hero__social {
     left: 50px;
+    bottom: 30%;
   }
 
   .hero__scrollDown {
     right: 50px;
+    bottom: 150px;
   }
 
   .hero__social__indicator,
@@ -99,9 +100,8 @@ const HeroStyles = styled.div`
       a {
         display: inline-block;
         font-size: 1.6rem;
-        transform: rotate(90deg);
         letter-spacing: 5px;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
       }
     }
   }
@@ -112,7 +112,6 @@ const HeroStyles = styled.div`
     }
     .hero__heading {
       font-size: 1.4rem;
-      margin-bottom: -3rem;
 
       .hero__name {
         font-size: 4.5rem;
@@ -175,21 +174,11 @@ export default function HeroSection() {
       <div className="hero">
         <div className="container">
           <h1 className="hero__heading">
-            <span>Hello, I'm</span>
+            <span>Hey there, I'm</span>
             <span className="hero__name">Jo Johnson</span>
           </h1>
           <div className="hero__img">
             <img src={HeroImg} alt="" />
-          </div>
-          <div className="hero__info">
-            <PText>
-              I'm a Senior finishing up my studies in Computer Science, and I'm
-              looking forward to starting my software engineering job at
-              Microsoft in Fall 2022.
-            </PText>
-            <div className="hero__info__button">
-              <Button btnLink="/projects" btnText="resume" outline={false} />
-            </div>
           </div>
           <div className="hero__social">
             <div className="hero__social__indicator">
@@ -204,7 +193,15 @@ export default function HeroSection() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    LI
+                    <Icon
+                      path={mdiLinkedin}
+                      title="LinkedIn"
+                      size={2}
+                      horizontal
+                      vertical
+                      rotate={-90}
+                      color="#BCB4B4"
+                    />
                   </a>
                 </li>
                 <li>
@@ -213,7 +210,15 @@ export default function HeroSection() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    GH
+                    <Icon
+                      path={mdiGithub}
+                      title="Github"
+                      size={2}
+                      horizontal
+                      vertical
+                      rotate={-90}
+                      color="#BCB4B4"
+                    />
                   </a>
                 </li>
               </ul>

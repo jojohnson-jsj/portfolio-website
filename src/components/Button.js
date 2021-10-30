@@ -27,12 +27,26 @@ export default function Button({
   btnLink = 'test',
   btnText = 'Test',
   outline = false,
+  file = false,
 }) {
   return (
     <ButtonStyle outline={outline} className="button-wrapper">
-      <Link className="button" to={btnLink}>
-        {btnText}
-      </Link>
+      {file ? (
+        <a
+          className="button"
+          href={btnLink}
+          target="_blank"
+          rel="noreferrer"
+          role="button"
+          tabIndex={0}
+        >
+          {btnText}
+        </a>
+      ) : (
+        <Link className="button" to={btnLink}>
+          {btnText}
+        </Link>
+      )}
     </ButtonStyle>
   );
 }

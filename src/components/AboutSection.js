@@ -4,6 +4,7 @@ import Button from './Button';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
 import AboutImg from '../assets/images/about-sec-img.png';
+import Resume from '../assets/files/resume.pdf';
 
 const AboutSectionStyle = styled.div`
   padding: 10rem 0;
@@ -102,7 +103,7 @@ export default function AboutSection() {
           </PText>
           <div className="aboutSection__buttons">
             <Button btnLink="/projects" btnText="projects" />
-            <Button btnLink="/about" btnText="read more" outline />
+            <Button btnLink={Resume} btnText="resume" outline file />
           </div>
         </div>
         <div className="aboutSection__right">
