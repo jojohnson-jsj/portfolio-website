@@ -6,6 +6,7 @@ const ButtonStyle = styled.div`
   margin-top: 2rem;
   .button {
     font-size: 2.2rem;
+    letter-spacing: 5px;
     background-color: ${(props) =>
       props.outline ? 'transparent' : 'var(--gray-1)'};
     padding: 0.7em 2em;
@@ -28,7 +29,7 @@ export default function Button({
   outline = false,
 }) {
   return (
-    <ButtonStyle outline={outline}>
+    <ButtonStyle outline={outline} className="button-wrapper">
       <Link className="button" to={btnLink}>
         {btnText}
       </Link>

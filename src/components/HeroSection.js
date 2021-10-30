@@ -125,6 +125,10 @@ const HeroStyles = styled.div`
 
     .hero__info {
       margin-top: 3rem;
+
+      .hero__info__button {
+        margin-top: 2rem;
+      }
     }
     .hero__social {
       left: 0px;
