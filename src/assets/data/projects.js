@@ -35,7 +35,7 @@ const projects = [
     link: 'https://github.com/jojohnson-jsj/Login-Validator',
     name: 'Login Validator',
     desc:
-      'Program that asks takes login credentials, hashes the given password with SHA256 and compares that username and encrypted password to the credentials stored in a given JSON file.',
+      'Takes login credentials, hashes the given password, and compares that username and encrypted password to the credentials stored in a given JSON file.',
     img: GreenCtgImg,
   },
   {
