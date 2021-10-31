@@ -91,7 +91,7 @@ export default function AboutSection() {
         <div className="aboutSection__left">
           <SectionTitle
             className="section-title"
-            subheading="Let me introduce myself"
+            subheading="let me introduce myself"
             heading="About me"
           />
           <PText>

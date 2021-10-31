@@ -40,6 +40,8 @@ const FooterStyles = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
+    padding-top: 2.5rem;
+
     .container {
       flex-direction: column;
       gap: 0;
@@ -50,6 +52,12 @@ const FooterStyles = styled.div`
 
     .footer__col1 .para {
       max-width: 100%;
+    }
+
+    .footer__col1,
+    .footer__col2,
+    .footer__col4 {
+      display: none;
     }
 
     .copyright {
