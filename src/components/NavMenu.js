@@ -130,7 +130,6 @@ export default function NavMenu() {
             href={Resume}
             target="_blank"
             rel="noreferrer"
-            to="/resume"
             onClick={() => SetShowNav(!showNav)}
             role="button"
             onKeyDown={() => SetShowNav(!showNav)}

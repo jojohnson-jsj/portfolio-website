@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import PText from './PText';
 import FooterCol from './FooterCol';
+import Resume from '../assets/files/resume.pdf';
 
 const FooterStyles = styled.div`
   padding-top: 10rem;
@@ -83,8 +84,7 @@ export default function Footer() {
               },
               {
                 title: 'Resume',
-                path: '/resume',
-                type: 'link',
+                path: Resume,
               },
               {
                 title: 'Projects',
