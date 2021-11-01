@@ -10,7 +10,8 @@ import 'swiper/swiper-bundle.min.css';
 SwiperCore.use([Navigation]);
 
 const ProjectsSectionStyles = styled.div`
-  padding: 10rem 0;
+  padding: 0;
+  padding-top: 20rem;
 
   .projects__allItems {
     display: flex;
@@ -48,6 +49,8 @@ const ProjectsSectionStyles = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
+    padding-top: 15rem;
+
     .projects__allItems {
       flex-direction: column;
       max-width: 400px;

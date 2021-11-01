@@ -7,7 +7,7 @@ import AboutImg from '../assets/images/about-sec-img.png';
 import Resume from '../assets/files/resume.pdf';
 
 const AboutSectionStyle = styled.div`
-  padding: 10rem 0;
+  padding: 0;
 
   .container {
     display: flex;
