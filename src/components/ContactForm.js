@@ -56,6 +56,7 @@ const FormStyle = styled.form`
     background-color: var(--deep-dark);
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 2rem;
     border-radius: 8px;
     margin-bottom: 2rem;
@@ -65,22 +66,14 @@ const FormStyle = styled.form`
   .map__card__heading {
     font-size: 3rem;
     margin-bottom: 1rem;
+    font-family: 'RobotoMono Regular';
   }
 
   @media only screen and (max-width: 768px) {
-    background-position: 50% center;
     .map__card {
-      width: 60%;
-      max-width: 250px;
+      width: 100%;
 
-      p {
-        font-size: 1.5rem;
-      }
-    }
-
-    .map__card__heading {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
+      margin-top: 0;
     }
   }
 `;
@@ -94,10 +87,8 @@ export default function ContactForm() {
   if (state.succeeded) {
     return (
       <FormStyle>
-        <div className="right">
-          <div className="map__card">
-            <h3 className="map__card__heading">submitted succesfully!</h3>
-          </div>
+        <div className="map__card">
+          <h3 className="map__card__heading">submitted succesfully!</h3>
         </div>
       </FormStyle>
     );
