@@ -16,7 +16,6 @@ const HeroStyles = styled.div`
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-top: -8rem;
   }
 
   .hero__heading {
