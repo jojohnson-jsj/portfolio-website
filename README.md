@@ -1,5 +1,3 @@
-# React Portfolio website
+# Portfolio Website
 
-Designed by - [shaif Arfan](http://github.com/shaifarfan) | [web cifar](http://webcifar.com)
-
-![](./ReadMeImages/ReadMeBanner.png)
+My own personal website to showcase myself and my projects, made using React.
