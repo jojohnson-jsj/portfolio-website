@@ -13,9 +13,13 @@ const HeroStyles = styled.div`
     width: 100%;
     text-align: center;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     position: relative;
+  }
+
+  .container {
+    margin-top: 10rem;
   }
 
   .hero__heading {
@@ -61,12 +65,12 @@ const HeroStyles = styled.div`
 
   .hero__social {
     left: 50px;
-    bottom: 30%;
+    bottom: 35%;
   }
 
   .hero__scrollDown {
     right: 50px;
-    bottom: 150px;
+    bottom: 220px;
   }
 
   .hero__social__indicator,
